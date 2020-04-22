@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 import NavMenu from "./NavMenu";
-import "./index.scss";
+// import "./index.scss";
 
-export default props => {
+export default (props) => {
   const [state, setState] = useState({
-    isOpen: false
+    isOpen: false,
   });
 
   const toggle = () => {
     setState({
-      isOpen: !state.isOpen
+      isOpen: !state.isOpen,
     });
   };
 

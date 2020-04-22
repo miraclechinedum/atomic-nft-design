@@ -1,7 +1,6 @@
-import React from "react";
 import withLayout from "../hocs/withLayout";
 
-const Index = props => {
+const Index = () => {
   return (
     <div className="text-center">
       <h1>Heading h1</h1>

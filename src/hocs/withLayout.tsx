@@ -1,13 +1,13 @@
-import React from "react";
+import * as React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const withLayout = WrappedComponent => {
-  const WithLayout = props => {
+const withLayout = (Child) => {
+  const WithLayout: React.FunctionComponent = (props) => {
     return (
       <div className="container-fluid p-0">
         <Navbar />
-        <WrappedComponent {...props} />
+        <Child {...props} />
         <Footer />
       </div>
     );

@@ -11,10 +11,10 @@ import CookieConsent from "../components/Common/CookieConsent";
 
 const Tawkto = dynamic(() => import("../components/Common/Tawkto"), {
   ssr: false,
-  loading: () => <p>Loading</p>
+  loading: () => <p>Loading</p>,
 });
 
-Router.events.on("routeChangeStart", url => {
+Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
   NProgress.start();
 });
@@ -24,8 +24,8 @@ Router.events.on("routeChangeError", () => NProgress.done());
 const theme = {
   colors: {
     primary: "#00AEEF",
-    yellow: "#fff507"
-  }
+    yellow: "#fff507",
+  },
 };
 
 class MyApp extends App {
@@ -36,17 +36,13 @@ class MyApp extends App {
     return (
       <Fragment>
         <Head>
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="/static/css/nprogress.css"
-          />
+          <link rel="stylesheet" type="text/css" href="/css/nprogress.css" />
         </Head>
         <ThemeProvider theme={theme}>
           <ApolloProvider client={apolloClient}>
-            <CookieConsent />
+            {/* <CookieConsent /> */}
             <Component {...pageProps} />
-            <Tawkto />
+            {/* <Tawkto /> */}
           </ApolloProvider>
         </ThemeProvider>
       </Fragment>

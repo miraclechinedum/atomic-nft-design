@@ -1,9 +1,19 @@
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import NewsLetter from "./NewsLetter";
-import { Phone, Email } from "../Common/ContactInfo";
-import "./index.scss";
+import { emailAddress, phoneNumber } from "../Common/ContactInfo";
+// import "./index.scss";
 
 export default () => {
+  const [date, setDate] = useState(new Date().getFullYear());
+  useEffect(() => {
+    async function fetchDate() {
+      const jsonData = await fetch("/api/currentDate");
+      const data = await jsonData.json();
+      setDate(data.year);
+    }
+    fetchDate();
+  }, []);
   return (
     <footer>
       <div className="container">
@@ -14,12 +24,8 @@ export default () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore
               </p>
-              <p>
-                <Phone />
-              </p>
-              <p>
-                <Email />
-              </p>
+              <p>{phoneNumber}</p>
+              <p>{emailAddress}</p>
             </div>
           </div>
           <div className="col-md-3">
@@ -57,7 +63,7 @@ export default () => {
         </div>
         <hr className="my-4" />
         <p className="copyright">
-          Copyright &copy; 2019. Companys Name. All Rights Reserved.
+          Copyright &copy; {date}. Companys Name. All Rights Reserved.
         </p>
       </div>
     </footer>
@@ -67,11 +73,11 @@ export default () => {
 const NavigateLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Contact Us", href: "/contact" }
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const SchemesLinks = [
   { label: "Link 1", href: "" },
   { label: "Link 2", href: "" },
-  { label: "Link 3", href: "" }
+  { label: "Link 3", href: "" },
 ];
