@@ -1,3 +1,3 @@
-# Nextjs 9 Boilerplate
+# Dongcoin 
 
-Boilerplate for Nextjs9
+Dongcoin website made with reactjs
