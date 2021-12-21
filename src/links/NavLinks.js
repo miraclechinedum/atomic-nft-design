@@ -1,8 +1,8 @@
 export default [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" }
+  { label: "EXPLORER", href: "/" },
+  { label: "MARKET", href: "/about" },
+  { label: "TRADING", href: "/blog" },
+  { label: "NFT CREATOR", href: "/contact" }
 ].map(link => {
   link.style = `nav-link`;
   return link;
