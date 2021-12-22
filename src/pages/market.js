@@ -1,13 +1,13 @@
 import React, { Fragment } from "react";
-import Home from "../components/Index/Home";
+import Market from "../components/Market/Market";
 import withLayout from "../hocs/withLayout";
 
-const Index = props => {
+const market = props => {
   return (
    <Fragment>
-      <Home/>
+      <Market/>
      </Fragment>
   );
 };
 
-export default withLayout(Index);
+export default withLayout(market);

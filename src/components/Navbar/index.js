@@ -31,9 +31,8 @@ export default props => {
               <li className="nav-item">
                 <input type="search" name="" id="" placeholder="Search....." />
               </li>
-              background: linear-gradient(
-                {/* 90deg,#ff0000,#ff0000a6); */}
-              <button type="button" className="btn btn-success" style={{ border: "none", outline: "none", color: "#fff", marginLeft: "10px", padding: "8px 32px",
+              
+              <button type="button" className="btn gra-btn btn-success" style={{ border: "none", outline: "none", color: "#fff", marginLeft: "10px", padding: "8px 32px",
     borderRadius: "20px",}}>Start</button>
             </ul>
         </Collapse>

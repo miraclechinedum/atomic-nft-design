@@ -1,6 +1,6 @@
 export default [
-  { label: "EXPLORER", href: "/" },
-  { label: "MARKET", href: "/about" },
+  { label: "EXPLORER", href: "/explorer" },
+  { label: "MARKET", href: "/market" },
   { label: "TRADING", href: "/blog" },
   { label: "NFT CREATOR", href: "/contact" }
 ].map(link => {

@@ -9,6 +9,7 @@ import withApollo from "../lib/withApollo";
 import { ThemeProvider } from "styled-components";
 import CookieConsent from "../components/Common/CookieConsent";
 
+
 const Tawkto = dynamic(() => import("../components/Common/Tawkto"), {
   ssr: false,
   loading: () => <p>Loading</p>
