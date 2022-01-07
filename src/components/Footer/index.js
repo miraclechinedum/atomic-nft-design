@@ -82,9 +82,7 @@ export default () => {
         {/* <!-- Section: Text --> */}
         <section class="mb-4">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-            repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-            eum harum corrupti dicta, aliquam sequi voluptate quas.
+          DongCoin is a one stop solution for creating, trading and buying / selling NFTs that is already used by hundreds of thousands of loyal users.
           </p>
         </section>
         {/* <!-- Section: Text --> */}

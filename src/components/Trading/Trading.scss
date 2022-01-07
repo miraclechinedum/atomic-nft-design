@@ -1,0 +1,20 @@
+.trading {
+    background-color: #22262d !important;
+    height: 100vh;
+
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .text-center {
+    color: #fff;
+    margin-top: 15%;
+
+    h3 {
+        font-family: Georgia;
+        padding-bottom: 15px;
+    }
+        }
+
+    }
+}

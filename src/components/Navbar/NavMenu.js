@@ -4,6 +4,9 @@ import NavLinks from "../../links/NavLinks";
 import "./NavMenu.scss";
 
 export default () => {
+  const login = [
+    ''
+  ]
   const Menu = NavLinks.map(({ label, href, style, download }, key) => {
     return (
       <NavItem key={key}>

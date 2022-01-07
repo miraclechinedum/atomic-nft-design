@@ -33,7 +33,7 @@ export default props => {
               </li>
               
               <button type="button" className="btn gra-btn btn-success" style={{ border: "none", outline: "none", color: "#fff", marginLeft: "10px", padding: "8px 32px",
-    borderRadius: "20px",}}>Start</button>
+    borderRadius: "20px",}}><a href="/connectwallet" style={{color: "white", textDecoration: "none", fontWeight: "bold"}}>Start</a></button>
             </ul>
         </Collapse>
       </div>
